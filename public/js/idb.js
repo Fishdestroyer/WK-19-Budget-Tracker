@@ -30,3 +30,20 @@ function saveRecord(record) {
 
   transactionObjectStore.add(record);
 }
+
+
+function uploadTransaction() {
+  const transaction = db.transaction(['new-transaction'], 'readwrite');
+
+  const transactionObjectStore = transaction.objectStore('new-transaction');
+
+  const getAll = transactionObjectStore.getAll();
+
+  getAll.onsuccess = function (){
+    if (getAll.result.length > 0) {
+      fetch('/api/')
+    }
+  }
+
+
+}

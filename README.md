@@ -9,6 +9,7 @@ This is our week 19 Budget Tracker module assignment. In this assignment, we are
 - [Technologies used](#technologies-used)
 - [Required installations](#required-installations)
 - [Additional resources](#additional-resources)
+- [Screen Shots](#screen-shots)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 - [GitHub Repo](#github-repo)
@@ -42,8 +43,12 @@ NPM install per package.json
 # Additional resources
 Module 18 content- 18.4, idex.db
 google
+MDN
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
 
+https://htmlcolorcodes.com/
 
+# Screen Shots
 # Acknowledgements
 
 
