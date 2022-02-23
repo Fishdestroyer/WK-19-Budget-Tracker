@@ -42,7 +42,9 @@ NPM install per package.json
 
 # Additional resources
 Module 18 content- 18.4, idex.db
+
 google
+
 MDN
 https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
 
