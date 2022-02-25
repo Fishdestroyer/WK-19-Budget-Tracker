@@ -43,6 +43,8 @@ NPM install per package.json
 # Additional resources
 Module 18 content- 18.4, idex.db
 
+Module 19 content
+
 google
 
 MDN
@@ -51,7 +53,15 @@ https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.
 https://htmlcolorcodes.com/
 
 # Screen Shots
+
+![WK 19 pic 1](https://user-images.githubusercontent.com/90293855/155657474-3f4ccc02-8130-41e2-ba20-05dc6a90db47.JPG)
+
+![WK 19 pic 2](https://user-images.githubusercontent.com/90293855/155657505-d3c0e369-9b58-40bd-a9bc-b19f8143f014.JPG)
 # Acknowledgements
+Shawn Littrel
+
+Peer group sessions
+
 
 
 # License

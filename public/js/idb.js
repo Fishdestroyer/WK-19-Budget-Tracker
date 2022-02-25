@@ -14,7 +14,7 @@ request.onsuccess = function (event) {
 
   if (navigator.onLine) {
 
-    uploadNewTransaction();
+    uploadTransaction();
   }
 };
 
@@ -39,11 +39,34 @@ function uploadTransaction() {
 
   const getAll = transactionObjectStore.getAll();
 
-  getAll.onsuccess = function (){
+  getAll.onsuccess = function () {
     if (getAll.result.length > 0) {
-      fetch('/api/')
+      fetch('/api/transaction', {
+        method: 'POST',
+        body: JSON.stringify(getAll.result),
+        headers: {
+          accept: 'application/json, text/plain, */*',
+          'content-type': 'application/json'
+        }
+      })
+        .then(response => response.json())
+        .then(serverResponse => {
+          if (serverResponse.message) {
+            throw new Error(serverResponse);
+          }
+
+          const transaction = db.transaction(['new-transaction'], 'readwrite');
+          const transactionObjectStore = transaction.objectStore('new-transaction');
+
+          transactionObjectStore.clear();
+        })
+        .catch(err => {
+
+          console.log(err);
+        });
+
     }
-  }
-
-
+  };
 }
+
+window.addEventListener('online', uploadTransaction);

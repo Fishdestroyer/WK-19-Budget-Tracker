@@ -1,4 +1,4 @@
-const APP_PREFIX = 'Bugdet-Tracker-';
+const APP_PREFIX = 'BugdetTracker-';
 const VERSION = 'version_01';
 const CACHE_NAME = APP_PREFIX + VERSION;
 
@@ -6,7 +6,8 @@ const FILES_TO_CACHE = [
     "./index.html",
     "./public/css/StyleSheet.css",
     "./js/index.js",
-    "./js/idb.js"
+    "./js/idb.js",
+    "./manifest.json"
 
 ];
 
